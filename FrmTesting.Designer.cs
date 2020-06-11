@@ -65,6 +65,7 @@
             this.Txt01.Name = "Txt01";
             this.Txt01.Size = new System.Drawing.Size(100, 26);
             this.Txt01.TabIndex = 2;
+            this.Txt01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Txt02
             // 
@@ -73,6 +74,7 @@
             this.Txt02.Name = "Txt02";
             this.Txt02.Size = new System.Drawing.Size(100, 26);
             this.Txt02.TabIndex = 3;
+            this.Txt02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Txt03
             // 
@@ -81,6 +83,7 @@
             this.Txt03.Name = "Txt03";
             this.Txt03.Size = new System.Drawing.Size(100, 26);
             this.Txt03.TabIndex = 4;
+            this.Txt03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Txt04
             // 
@@ -89,6 +92,7 @@
             this.Txt04.Name = "Txt04";
             this.Txt04.Size = new System.Drawing.Size(100, 26);
             this.Txt04.TabIndex = 5;
+            this.Txt04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // FrmTesting
             // 

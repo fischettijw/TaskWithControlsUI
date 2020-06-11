@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -25,6 +26,7 @@ namespace TaskWithControlsUI
 
         private void BtnClick_Click(object sender, EventArgs e)
         {
+            LbxOutput.BackColor = Color.White;
             Task t1 = Task.Run(() =>
             {
                 for (int i = 0; i < 100; i++)
@@ -47,9 +49,28 @@ namespace TaskWithControlsUI
                 Txt02.Text = "2-Complete";
             });
 
-            Task.WaitAll(t2);
+            Task<string> t3 = new Task<string>(() =>
+            {
+                string strReturn = "Downstream";
+                return strReturn;
+            });
+            t3.Start();
 
-            Txt03.Text = "Downstream";
+
+            Task.WaitAll();
+
+            Txt03.Text = t3.Result;
+
+            Task t4 = Task.Run(() =>
+            {
+                for (int i = 0; i < 50; i++)
+                {
+                    Txt04.Text = i.ToString();
+                    Thread.Sleep(100);
+                }
+            });
+            Task.WaitAll();
+            LbxOutput.BackColor = Color.LightBlue;
         }
     }
 
