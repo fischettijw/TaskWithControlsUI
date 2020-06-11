@@ -57,7 +57,7 @@ namespace TaskWithControlsUI
             t3.Start();
 
 
-            Task.WaitAll();
+            Task.WaitAll(t2);
 
             Txt03.Text = t3.Result;
 
