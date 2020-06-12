@@ -57,7 +57,7 @@ namespace TaskWithControlsUI
             t3.Start();
 
 
-            Task.WaitAll(t2);
+            Task.WaitAll(new[] { t2 });
 
             Txt03.Text = t3.Result;
 
@@ -69,14 +69,9 @@ namespace TaskWithControlsUI
                     Thread.Sleep(100);
                 }
             });
-            Task.WaitAll();
             LbxOutput.BackColor = Color.LightBlue;
+            //Task.WaitAll(new[] { t1, t2, t3 });
+            //LbxOutput.BackColor = Color.LightPink;
         }
     }
-
-
-
-
-
-
 }

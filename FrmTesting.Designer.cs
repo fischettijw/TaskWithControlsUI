@@ -34,6 +34,9 @@
             this.Txt02 = new System.Windows.Forms.TextBox();
             this.Txt03 = new System.Windows.Forms.TextBox();
             this.Txt04 = new System.Windows.Forms.TextBox();
+            this.CbxT1 = new System.Windows.Forms.CheckBox();
+            this.CbxT3 = new System.Windows.Forms.CheckBox();
+            this.CbxT2 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // LbxOutput
@@ -94,17 +97,52 @@
             this.Txt04.TabIndex = 5;
             this.Txt04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // CbxT1
+            // 
+            this.CbxT1.AutoSize = true;
+            this.CbxT1.Location = new System.Drawing.Point(12, 448);
+            this.CbxT1.Name = "CbxT1";
+            this.CbxT1.Size = new System.Drawing.Size(39, 17);
+            this.CbxT1.TabIndex = 6;
+            this.CbxT1.Text = "T1";
+            this.CbxT1.UseVisualStyleBackColor = true;
+            // 
+            // CbxT3
+            // 
+            this.CbxT3.AutoSize = true;
+            this.CbxT3.Location = new System.Drawing.Point(102, 448);
+            this.CbxT3.Name = "CbxT3";
+            this.CbxT3.Size = new System.Drawing.Size(39, 17);
+            this.CbxT3.TabIndex = 7;
+            this.CbxT3.Text = "T3";
+            this.CbxT3.UseVisualStyleBackColor = true;
+            // 
+            // CbxT2
+            // 
+            this.CbxT2.AutoSize = true;
+            this.CbxT2.Location = new System.Drawing.Point(57, 448);
+            this.CbxT2.Name = "CbxT2";
+            this.CbxT2.Size = new System.Drawing.Size(39, 17);
+            this.CbxT2.TabIndex = 8;
+            this.CbxT2.Text = "T2";
+            this.CbxT2.UseVisualStyleBackColor = true;
+            // 
             // FrmTesting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 450);
+            this.ClientSize = new System.Drawing.Size(642, 477);
+            this.Controls.Add(this.CbxT2);
+            this.Controls.Add(this.CbxT3);
+            this.Controls.Add(this.CbxT1);
             this.Controls.Add(this.Txt04);
             this.Controls.Add(this.Txt03);
             this.Controls.Add(this.Txt02);
             this.Controls.Add(this.Txt01);
             this.Controls.Add(this.BtnClick);
             this.Controls.Add(this.LbxOutput);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "FrmTesting";
             this.Text = "Listbox Output";
             this.Load += new System.EventHandler(this.FrmTesting_Load);
@@ -121,6 +159,9 @@
         private System.Windows.Forms.TextBox Txt02;
         private System.Windows.Forms.TextBox Txt03;
         private System.Windows.Forms.TextBox Txt04;
+        private System.Windows.Forms.CheckBox CbxT1;
+        private System.Windows.Forms.CheckBox CbxT3;
+        private System.Windows.Forms.CheckBox CbxT2;
     }
 }
 
